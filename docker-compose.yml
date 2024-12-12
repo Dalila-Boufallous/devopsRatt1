@@ -1,12 +1,12 @@
 version: "3.7"
 services:
-  Kaddem:
+  events:
     container_name: events
     image: dalila_ratt/events:9  # Utilisez une image préexistante
     ports:
       - "8086:8086"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://dbmysql:3306/evnetsProjectApp?createDatabaseIfNotExist=true&useSSL=false
+      - SPRING_DATASOURCE_URL=jdbc:mysql://dbmysql:3306/eventsApp?createDatabaseIfNotExist=true&useSSL=false
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=root
     restart: unless-stopped
@@ -25,7 +25,7 @@ services:
       - db:/var/lib/mysql
 
   #angular-app:
-   # image: Dalila_Ratt/events:9:latest  # Assurez-vous que cette image est disponible
+   # image: Dalila_ratt/events:9:latest  # Assurez-vous que cette image est disponible
    # ports:
     #  - "4200:80"  # Ports Angular
    # restart: always
