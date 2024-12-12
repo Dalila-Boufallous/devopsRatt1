@@ -2,7 +2,7 @@ version: "3.7"
 services:
   Kaddem:
     container_name: events
-    image: Dalila_Ratt/events:9  # Utilisez une image préexistante
+    image: dalila_ratt/events:9  # Utilisez une image préexistante
     ports:
       - "8086:8086"
     environment:
