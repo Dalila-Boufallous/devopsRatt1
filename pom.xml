@@ -8,11 +8,11 @@
         <version>2.7.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>tn.esprit</groupId>
-    <artifactId>eventsProject</artifactId>
+    <groupId>tn.esprit.spring</groupId>
+    <artifactId>events</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>eventsProject</name>
-    <description>eventsProject</description>
+    <description>events</description>
     <scm>
         <connection>scm:svn:http://somerepository.com/svn_repo/trunk</connection>
         <developerConnection>scm:svn:https://somerepository.com/svn_repo/trunk</developerConnection>

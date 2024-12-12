@@ -2,7 +2,7 @@ version: "3.7"
 services:
   Kaddem:
     container_name: events
-    image: Dalila_Ratt/eventsProject:9  # Utilisez une image préexistante
+    image: Dalila_Ratt/events:9  # Utilisez une image préexistante
     ports:
       - "8086:8086"
     environment:
@@ -25,7 +25,7 @@ services:
       - db:/var/lib/mysql
 
   #angular-app:
-   # image: Dalila_Ratt/eventsProject:9:latest  # Assurez-vous que cette image est disponible
+   # image: Dalila_Ratt/events:9:latest  # Assurez-vous que cette image est disponible
    # ports:
     #  - "4200:80"  # Ports Angular
    # restart: always
