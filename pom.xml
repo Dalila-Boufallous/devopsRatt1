@@ -55,6 +55,19 @@
         </dependency>
     </dependencies>
 
+
+    <distributionManagement>
+        <repository>
+            <id>releasesRepo</id>
+            <url>http://localhost:8081/repository/maven-releases/</url> <!-- Dépôt pour versions stables -->
+        </repository>
+        <snapshotRepository>
+            <id>snapshotsRepo</id>
+            <url>http://localhost:8081/repository/maven-snapshots/</url> <!-- Dépôt pour SNAPSHOTS -->
+        </snapshotRepository>
+    </distributionManagement>
+
+
     <build>
         <plugins>
             <plugin>
@@ -79,5 +92,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>
